@@ -14,15 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Celerity.Native">
-      <HintPath>..\x64\Release\Celerity.Native.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Celerity.Native\Celerity.Native.vcxproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Ijwhost.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

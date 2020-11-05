@@ -1,4 +1,7 @@
-﻿using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Loggers;
+using BenchmarkDotNet.Running;
 using System;
 
 namespace Celerity.Native.Benchmark
@@ -7,7 +10,8 @@ namespace Celerity.Native.Benchmark
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<InterlockedBenchmark>();
+            BenchmarkRunner.Run<InterlockedBenchmark>(ManualConfig.Create(DefaultConfig.Instance)
+                .AddJob(Job.RyuJitX64));
         }
     }
 }
