@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Celerity.Native</id>
+        <version>0.1.0</version>
+        <description>Provides .NET access to otherwise unavilable native operations on Windows. Example InterlockedDecrement16.</description>
+        <authors>Christopher de Haas</authors>
+    </metadata>
+
+    <files>
+        <file src="x64/Release/Celerity.Native.dll" target="lib\netcoreapp3.1" />
+        <file src="x64/Release/Celerity.Native.pdb" target="lib\netcoreapp3.1" />
+        <file src="x64/Release/Celerity.Native.xml" target="lib\netcoreapp3.1" />
+        <file src="x64/Release/Ijwhost.dll" target="lib\netcoreapp3.1" />
+  </files>
+</package>
